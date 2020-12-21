@@ -36,4 +36,8 @@ export class ItemComponent implements OnInit{
     this.foodServiceObs.subscribe((data)=>this.prodotto = data);
   }
 
+  back():void{
+    this.location.back();
+  }
+
 }
